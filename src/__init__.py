@@ -1,5 +1,6 @@
 from PySide6 import QtQml
-from .streamer import Streamer, VideoImage
+from .image import VideoImage
+from .streamer import Streamer
 import cv2
 from pathlib import Path
 import sys
