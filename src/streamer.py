@@ -5,9 +5,10 @@ from PySide6 import QtCore, QtGui, QtQuick, QtQml
 import sys
 from src.Singleton import Singleton
 FILE = Path(__file__).resolve()
-ROOT = FILE.parents[1] 
-sys.path.append(ROOT)
-sys.path.append(str(ROOT.joinpath('lib/MvImport')))
+
+ROOT = FILE.parents[0] 
+sys.path.append(str(ROOT.joinpath('MvImport')))
+
 from MvCameraControl_class import *
 
 

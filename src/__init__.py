@@ -9,7 +9,8 @@ import sys
 FILE = Path(__file__).resolve()
 ROOT = FILE.parents[1] 
 sys.path.append(ROOT)
-sys.path.append(str(ROOT.joinpath('lib/MvImport')))
+print(ROOT)
+sys.path.append(str(ROOT.joinpath('MvImport')))
 
 def registerTypes(uri = "PyCVQML"):
 
